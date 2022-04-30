@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <title>index.html</title>
 		<style>
+			@media(min-width:760px){
 		.container{
 			display: flex;
+			flex-wrap: wrap;
 			flex-direction:row;
 			align-items:center;
 			justify-content: center;
@@ -20,7 +22,8 @@
 				padding-left: 75px;
 				padding-right: 75px;
 				background: #0A3805;
-				}
+				
+			}
 			.hometab{
 				
 			}	
@@ -36,10 +39,14 @@
 			.contacttab{
 				
 			}
-			.container-1{
+				
+	
+		.container-1{
 			display: flex;
 			flex-direction:column;
 			align-items:center;
+			flex-wrap: wrap;
+			align-content: center;
 			
 				
 		}
@@ -48,6 +55,7 @@
 			padding-bottom: 1px;
 			align-items: center;
 			flex flex-direction: column;
+			flex-wrap: wrap;
 		}
 		.home1{
 		align-content:center;
@@ -66,6 +74,7 @@
 			}
 		.container-2{
 			display:flex;
+			flex-wrap: wrap;
 			flex-basis:2%;
 			flex-direction:row;
 			align-items: center;
@@ -87,10 +96,12 @@
 		}
 	.signup {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 }
+			}
         </style>
 </head>
 
@@ -117,7 +128,7 @@
 	</div>
 <div class="container-1">
 <div class="home1">
-  <img src="homepage.jpg" width="1250" height="755" alt=""/> </div>
+  <img src="homepage.jpg" width="800" height="510" alt=""/> </div>
 <div class="newarrivals">
 		<h2>NEW ARRIVALS</h2>
   </div>
@@ -126,15 +137,15 @@
 	
 		<div class="box-4">
 			<img src="beauty image 7.jpg" width="342" height="342" alt=""/>
-	<p>Illuminate Eye Mask</p><button>$28</button>
+	<p>Illuminate Eye Mask</p><button style="background-color:#C5D6C4">$28</button>
 	</div>
 <div class="box-6">
     <img src="beauty image 4.jpg" width="342" height="342" alt=""/> 
-	<p>Good To Glow Serum</p><button>$36</button>
+	<p>Good To Glow Serum</p><button style="background-color:#C5D6C4">$36</button>
 	</div>
 	<div class="box-5">
 	  <img src="beauty image 5.jpg" width="365" height="342" alt=""/> 
-	<p>Sea Salt Lip Scrub</p><button>$24</button>
+	<p>Sea Salt Lip Scrub</p><button style="background-color:#C5D6C4">$24</button>
 	</div>
 </div>
 		<form class="signup">
@@ -151,7 +162,7 @@
 	<label>New Arrivals and Sales</label>
 		<input type="checkbox" name="New Arrivals and Sales" id="New Arrivals and Sales">
 		<div>
-		<button type="submit">Submit</button>
+		<button type="submit" style="background-color:#F17F64">Submit</button>
 		</div>
 	</form>
 	
