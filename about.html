@@ -23,7 +23,7 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<style>
-		@media(min-width:600px){
+		@media(min-width:760px){
 			.container{
 			display: flex;
 			flex-direction:row;
@@ -56,21 +56,24 @@
 			.contacttab{
 				
 			}
-			.container-1{
-				display: flex;
-				align-content: center;
-				justify-content: center;
-				flex-direction: column;
-			}
-				.container-1 div{
-				display: flex;
-				align-content: center;
-				justify-content: center;
-				flex-direction: column;
-				padding-left: 100px;
-				padding-right: 100px;
-				flex-wrap: wrap;
-			}
+				.container-1{
+			display: flex;
+			flex-direction:column;
+			align-items:center;
+			flex-wrap: wrap;
+			align-content: center;
+			
+				
+		}
+			.container-1 div{
+			padding-top:10px;
+			padding-bottom:10px;
+			padding-left:120px;
+			padding-right: 120px;
+			align-items: center;
+			flex flex-direction: column;
+			flex-wrap: wrap;
+		}
 			.logo{
 				
 			}
@@ -81,6 +84,55 @@
 				padding-top: 20px;
 				padding-bottom:20px;
 			}
+			.newarrivals{
+		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		background-color:#FFFFFF;
+		color:#618F5F;
+		padding-left: 60px;
+	    padding-right: 60px;
+		letter-spacing:5px;
+		border-style:dotted;
+		border-color: #F8BDAF;
+		border-width:10px;
+			}
+			.container-2{
+			display:flex;
+			flex-wrap: wrap;
+			flex-basis:2%;
+			flex-direction:row;
+			align-items: center;
+			justify-content: center;
+		
+		}
+		.container-2 div{
+			padding-top: 30px;
+			padding-left:12px;
+			padding-right: 12px;
+			align-items: center;
+			}
+		
+		.box-4{
+			order:1;
+		}
+		.box-5{
+			order:2;
+		}
+		.box-6{
+			order:3;
+		}
+		.signupimage{
+			order:4;
+		}
+	.signup {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 20px;
+		color: #739771;
+		padding-top:0px;
+}
 		}
 	</style>
 </head>
@@ -105,12 +157,47 @@
 	</div>
 	<div class="container-1">
 	<div class="logo">
-		<img src="homepage.jpg" width="800" height="510" alt=""/></div>
+		<img src="selfcarelalunabelle.jpg" width="1000" height="350" alt=""/></div>
 	<div class="about">
 		<h1>Our Skincare Philosophy</h1>
-		<p>We believe in helping those looking for a sustainable option for skin care to bring them locally sourced product with eliminating the use of plastics by having on tap natural skin care products to reduce the use of plastic. This allows us to take pride in our products and enjoy selling natural products worldwide. </p>
+		<p style="font-size:18px">We believe in helping those looking for a sustainable option for skin care to bring them locally sourced product with eliminating the use of plastics by having on tap natural skin care products to reduce the use of plastic. This allows us to take pride in our products and enjoy selling natural products worldwide. </p>
 		</div>
-		
+		<div class="newarrivals">
+			<h2>NEW ARRIVALS</h2></div>
 	</div>
+	<div class="container-2">
+		<div class="box-4">
+			<img src="beauty image 7.jpg" width="342" height="342" alt=""/>
+	<p>Illuminate Eye Mask</p><button style="background-color:#C5D6C4">$28</button>
+	</div>
+<div class="box-6">
+    <img src="beauty image 4.jpg" width="342" height="342" alt=""/> 
+	<p>Good To Glow Serum</p><button style="background-color:#C5D6C4">$36</button>
+	</div>
+	<div class="box-5">
+	  <img src="beauty image 5.jpg" width="365" height="342" alt=""/> 
+	<p>Sea Salt Lip Scrub</p><button style="background-color:#C5D6C4">$24</button>
+	</div>
+	<div class="signupimage">
+    <img src="signuplalunabelle.jpg" width="682" height="450" alt=""/></div>
+</div>
+		<form class="signup">
+		<div>
+	<label>Email Me</label>
+		<input type="email" name="email" id="email" required>
+		</div>
+	<label>Text Me</label>
+		<input type= "phone" name="phone" id="phone">
+		<div> 
+	<label>Weekly Newsletter</label>
+		<input type="checkbox" name="Weekly Newsletter" id="Weekly Newsletter">
+		</div>
+	<label>New Arrivals and Sales</label>
+		<input type="checkbox" name="New Arrivals and Sales" id="New Arrivals and Sales">
+		<div>
+		<button type="submit" style="background-color:#F17F64">Submit</button>
+		</div>
+	</form>
+	<footer style="color: #F3957C">Copyright 2022 La Luna Belle &trade;</footer>
 </body>
 </html>
